@@ -1,0 +1,361 @@
+.admin-dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-muted);
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #00c2ff, #9b5cff);
+  color: #020617;
+  border-color: transparent;
+}
+
+.dashboard-content {
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.content-header h2 {
+  font-size: 1.5rem;
+  color: var(--text-main);
+  margin: 0;
+}
+
+/* Invite Codes Section */
+.code-generator {
+  background: rgba(0, 194, 255, 0.05);
+  border: 1px solid rgba(0, 194, 255, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.code-generator h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.generator-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.code-count-input {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+  font-size: 1rem;
+  outline: none;
+  width: 100px;
+  text-align: center;
+}
+
+.codes-section {
+  margin-top: 2rem;
+}
+
+.codes-section h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.codes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.code-card {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.code-card.unused {
+  border-color: rgba(0, 194, 255, 0.3);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 194, 255, 0.08),
+    rgba(0, 194, 255, 0.03)
+  );
+}
+
+.code-card.used {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.02);
+  opacity: 0.6;
+}
+
+.code-text {
+  font-family: monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.code-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.code-status {
+  font-size: 0.85rem;
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.search-input {
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+  font-size: 0.9rem;
+  outline: none;
+  min-width: 250px;
+  transition: border-color 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.data-table thead {
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.data-table th {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.data-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.data-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.data-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.role-select {
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.role-select:focus {
+  border-color: var(--accent);
+}
+
+.role-select option {
+  background: var(--bg);
+  color: var(--text-main);
+}
+
+.btn-sm {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.8rem;
+}
+
+.btn-delete {
+  border-color: rgba(255, 85, 85, 0.3);
+  color: #ff5555;
+}
+
+.btn-delete:hover {
+  background: rgba(255, 85, 85, 0.1);
+  border-color: #ff5555;
+}
+
+.no-data {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* Join Requests Grid */
+.join-requests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.request-card {
+  padding: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.03)
+  );
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.request-header h3 {
+  font-size: 1.15rem;
+  margin: 0;
+  color: var(--text-main);
+}
+
+.request-details p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.request-details strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.request-details a {
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+.request-details a:hover {
+  color: var(--accent-purple);
+}
+
+.about-text {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.request-date {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-tabs {
+    width: 100%;
+  }
+
+  .tab-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .content-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .data-table {
+    font-size: 0.85rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 0.6rem 0.5rem;
+  }
+
+  .join-requests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .codes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .generator-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .code-count-input {
+    width: 100%;
+  }
+}

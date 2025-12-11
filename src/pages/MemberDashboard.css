@@ -1,0 +1,247 @@
+.member-dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-form-card {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-header h2 {
+  font-size: 1.5rem;
+  color: var(--text-main);
+  margin: 0;
+}
+
+/* Stats Cards */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.75rem;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 194, 255, 0.08),
+    rgba(155, 92, 255, 0.08)
+  );
+  border: 1px solid rgba(0, 194, 255, 0.2);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00c2ff, #9b5cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Events List */
+.events-list {
+  margin-top: 2rem;
+}
+
+.list-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+}
+
+.no-events {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.no-events h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.no-events p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.events-table-wrapper {
+  overflow-x: auto;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.events-table thead {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.events-table th {
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.events-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.events-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.events-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.event-title-col {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.upcoming {
+  background: rgba(0, 194, 255, 0.15);
+  color: var(--accent);
+  border: 1px solid rgba(0, 194, 255, 0.3);
+}
+
+.status-badge.past {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.actions-col {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-action {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.btn-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-edit:hover {
+  background: rgba(0, 194, 255, 0.1);
+  border-color: var(--accent);
+}
+
+.btn-delete:hover {
+  background: rgba(255, 85, 85, 0.1);
+  border-color: #ff5555;
+}
+
+.btn-view:hover {
+  background: rgba(155, 92, 255, 0.1);
+  border-color: var(--accent-purple);
+}
+
+.loading-container {
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dashboard-header button {
+    width: 100%;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .events-table {
+    font-size: 0.85rem;
+  }
+
+  .events-table th,
+  .events-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .actions-col {
+    flex-direction: column;
+  }
+
+  .btn-action {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .events-table-wrapper {
+    overflow-x: scroll;
+  }
+
+  .events-table {
+    min-width: 600px;
+  }
+}

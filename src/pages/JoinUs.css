@@ -1,0 +1,78 @@
+.join-us-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.join-us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.join-us-left {
+  position: sticky;
+  top: 100px;
+}
+
+.join-us-description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 1rem 0 2rem;
+}
+
+.benefits-list h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.75rem;
+  color: var(--text-main);
+}
+
+.benefits-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefits-list ul li {
+  padding: 0.5rem 0;
+  color: var(--text-muted);
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.benefits-list ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.join-form-card {
+  padding: 2rem;
+}
+
+.join-form-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+.form-subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 968px) {
+  .join-us-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .join-us-left {
+    position: static;
+  }
+}

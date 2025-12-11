@@ -1,0 +1,41 @@
+.events-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-create-form {
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+.event-create-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+}
+
+.no-events {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .events-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .events-header button {
+    width: 100%;
+  }
+}

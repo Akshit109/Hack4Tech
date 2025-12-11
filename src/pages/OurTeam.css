@@ -1,0 +1,51 @@
+.our-team-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leadership-section {
+  margin-top: 3rem;
+}
+
+.subsection-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1500px;
+  margin: 0 auto 4rem;
+}
+
+.core-team-section {
+  margin-top: 4rem;
+}
+
+.team-cta {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  margin-top: 4rem;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 194, 255, 0.08),
+    rgba(155, 92, 255, 0.08)
+  );
+  border: 1px solid rgba(0, 194, 255, 0.2);
+}
+
+.team-cta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.team-cta p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}

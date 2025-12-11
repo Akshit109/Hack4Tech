@@ -1,0 +1,137 @@
+.auth-page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.auth-card {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.auth-card h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+.auth-subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.auth-footer {
+  margin-top: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.auth-link {
+  color: var(--accent);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.auth-link:hover {
+  color: var(--accent-purple);
+}
+
+.admin-card {
+  border-color: rgba(155, 92, 255, 0.3);
+}
+
+.admin-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: rgba(155, 92, 255, 0.15);
+  border: 1px solid rgba(155, 92, 255, 0.3);
+  border-radius: 999px;
+  color: var(--accent-purple);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.auth-page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.auth-container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.auth-card {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.signup-card {
+  max-width: 520px;
+}
+
+.auth-card h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+.auth-subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.invite-notice {
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: #ffc107;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.auth-footer {
+  margin-top: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.auth-link {
+  color: var(--accent);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.auth-link:hover {
+  color: var(--accent-purple);
+}
+
+.admin-card {
+  border-color: rgba(155, 92, 255, 0.3);
+}
+
+.admin-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: rgba(155, 92, 255, 0.15);
+  border: 1px solid rgba(155, 92, 255, 0.3);
+  border-radius: 999px;
+  color: var(--accent-purple);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}

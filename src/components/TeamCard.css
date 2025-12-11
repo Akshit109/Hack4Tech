@@ -1,0 +1,85 @@
+.team-card {
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.team-card-highlight {
+  border-color: rgba(0, 194, 255, 0.6);
+  box-shadow: 0 22px 55px rgba(0, 194, 255, 0.25);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.team-avatar-wrapper {
+  width: 8.25rem;
+  height: 10.25rem;
+  border-radius: 10%;
+  margin: 0 auto 0.5rem;
+  
+  padding: 3px;
+  background: conic-gradient(from 120deg, #00c2ff, #9b5cff, #00c2ff);
+}
+
+.team-avatar {
+  width: 8rem;
+  height: 10rem;
+  border-radius: 10%;
+  object-fit: cover;
+  display: block;
+  /* border: 3px solid var(--bg); */
+}
+
+.team-name {
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+.team-role {
+  margin: 0 0 0.85rem;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.team-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.team-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-link:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.team-link-linkedin {
+  background: #0a66c2;
+  color: #f9fafb;
+}
+
+.team-link-github {
+  background: #111827;
+  color: #f9fafb;
+}
+
+.team-link-email {
+  background: #f97316;
+  color: #0b1020;
+}
