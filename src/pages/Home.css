@@ -99,19 +99,19 @@
 
 .hero-card-1 {
   top: 10%;
-  left: 10%;
+  left: 5%;
   animation-delay: 0s;
 }
 
 .hero-card-2 {
-  top: 45%;
-  right: 5%;
+  bottom: 5%;
+  left: 5%;
   animation-delay: 0.5s;
 }
 
 .hero-card-3 {
-  bottom: 15%;
-  left: 20%;
+  bottom: 35%;
+  left: 40%;
   animation-delay: 1s;
 }
 

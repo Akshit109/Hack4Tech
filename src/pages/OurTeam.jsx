@@ -14,23 +14,23 @@ export default function OurTeam() {
       role: 'President ',
       img: akshitImg, // Replace with actual image
       linkedin: 'https://linkedin.com/in/akshit109',
-      github: 'https://github.com/akshit109',
-      email: 'akshit@hack4tech.com',
+     
+      email: 'jaiswalakshit4@gmail.com',
     },
     {
       name: 'Ankit Saraswat',
       role: 'Vice President',
       img: ankitImg , // Replace with actual image
-      linkedin: 'https://linkedin.com/in/ankit-saraswat',
-      github: 'https://github.com/ankit-saraswat',
-      email: 'ankit@hack4tech.com',
+      linkedin: 'https://linkedin.com/in/shortsays',
+      
+      email: 'ankitsaraswatyt@gmail.com',
     },{
       name: 'Manish Solankey',
-      role: 'Gernal Secatery',
+      role: 'General Secretary',
       img: manishImg, // Replace with actual image
-      linkedin: 'https://linkedin.com/in/ankit-saraswat',
-      github: 'https://github.com/ankit-saraswat',
-      email: 'ankit@hack4tech.com',
+      linkedin: 'https://linkedin.com/in/manish-chaudhary-4569bb276',
+     
+      email: 'singhkarmveer18499@gmail.com',
     },
   ];
 
