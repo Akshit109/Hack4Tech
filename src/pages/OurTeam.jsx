@@ -2,64 +2,47 @@ import React from 'react';
 import TeamCard from '../components/TeamCard';
 import './OurTeam.css';
 
-// Import team images - replace with actual paths
-import akshitImg from '../assets/Akshit.jpg';
+// Import team images
+import akshitImg from '../assets/Akshit2.jpg';
 import ankitImg from '../assets/Ankit.jpg';
 import manishImg from '../assets/Manish.jpg';
+import mentorImg from '../assets/Mentor.jpg'; // add your mentor image
 
 export default function OurTeam() {
   const leadership = [
     {
       name: 'Akshit Jaiswal',
-      role: 'President ',
-      img: akshitImg, // Replace with actual image
+      role: 'President',
+      img: akshitImg,
       linkedin: 'https://linkedin.com/in/akshit109',
-     
       email: 'jaiswalakshit4@gmail.com',
     },
     {
       name: 'Ankit Saraswat',
       role: 'Vice President',
-      img: ankitImg , // Replace with actual image
+      img: ankitImg,
       linkedin: 'https://linkedin.com/in/shortsays',
-      
       email: 'ankitsaraswatyt@gmail.com',
-    },{
+    },
+    {
       name: 'Manish Solankey',
       role: 'General Secretary',
-      img: manishImg, // Replace with actual image
+      img: manishImg,
       linkedin: 'https://linkedin.com/in/manish-chaudhary-4569bb276',
-     
       email: 'singhkarmveer18499@gmail.com',
     },
   ];
 
+  const mentor = {
+    name: 'Dr. Shobhit Sachan',
+    qualification: 'Assistant Professor, CSE Dept.',
+    designation: 'Faculty Mentor, Hack4Tech',
+    img: mentorImg,
+    email: 'shobhitsachan@gmail.com',
+  };
+
   const coreTeam = [
-    // {
-    //   name: 'Member Name',
-    //   role: 'Technical Lead',
-    //   img: 'https://via.placeholder.com/150',
-    //   linkedin: 'https://linkedin.com/in/member',
-    //   github: 'https://github.com/member',
-    //   email: 'member@hack4tech.com',
-    // },
-    // {
-    //   name: 'Member Name',
-    //   role: 'Technical Lead',
-    //   img: 'https://via.placeholder.com/150',
-    //   linkedin: 'https://linkedin.com/in/member',
-    //   github: 'https://github.com/member',
-    //   email: 'member@hack4tech.com',
-    // },
-    // {
-    //   name: 'Member Name',
-    //   role: 'Technical Lead',
-    //   img: 'https://via.placeholder.com/150',
-    //   linkedin: 'https://linkedin.com/in/member',
-    //   github: 'https://github.com/member',
-    //   email: 'member@hack4tech.com',
-    // },
-    // Add more core team members here
+    // add more members later
   ];
 
   return (
@@ -70,26 +53,36 @@ export default function OurTeam() {
           Meet the passionate team driving Hack4Tech at GLA University
         </p>
 
+        {/* Mentor Section */}
+        <div className="mentor-section glass-card">
+          <div className="mentor-avatar-wrapper">
+            <img
+              src={mentor.img}
+              alt={mentor.name}
+              className="mentor-avatar"
+            />
+          </div>
+          <div className="mentor-info">
+            <h2 className="mentor-name">{mentor.name}</h2>
+            <p className="mentor-designation">{mentor.designation}</p>
+            <p className="mentor-qualification">{mentor.qualification}</p>
+            <a href={`mailto:${mentor.email}`} className="mentor-email">
+              {mentor.email}
+            </a>
+          </div>
+        </div>
+
         {/* Leadership */}
         <div className="leadership-section">
           <h2 className="subsection-title">Core Team</h2>
           <div className="leadership-grid">
             {leadership.map(member => (
-              <TeamCard key={member.name} member={member} highlight={true} />
+              <TeamCard key={member.name} member={member} highlight />
             ))}
           </div>
         </div>
 
-        {/* Core Team */}
-        <div className="core-team-section">
-          <h2 className="subsection-title"></h2>
-          <div className="grid">
-            {coreTeam.map(member => (
-              <TeamCard key={member.name} member={member} />
-            ))}
-          </div>
-        </div>
-
+        
         {/* Join CTA */}
         <div className="team-cta glass-card">
           <h3>Want to join our core team?</h3>

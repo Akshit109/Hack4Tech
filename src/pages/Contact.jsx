@@ -11,6 +11,7 @@ export default function Contact() {
         </p>
 
         <div className="contact-grid">
+          {/* Address */}
           <div className="glass-card contact-card">
             <div className="contact-icon">📍</div>
             <h3>Address</h3>
@@ -19,49 +20,51 @@ export default function Contact() {
             <p>India - 281406</p>
           </div>
 
+          {/* Email with icon + text */}
           <div className="glass-card contact-card">
             <div className="contact-icon">📧</div>
             <h3>Email</h3>
-            <p>
-              <a href="mailto:hack4tech@gla.ac.in">hack4tech@gla.ac.in</a>
-            </p>
-            <p>
-              <a href="mailto:info@hack4tech.com">info@hack4tech.com</a>
-            </p>
+            <div className="contact-list">
+              <a
+                href="mailto:hack4tech@gla.ac.in"
+                className="contact-row"
+              >
+                <span className="icon-circle mail-icon">✉️</span>
+                <span className="contact-text">hack4tech@gla.ac.in</span>
+              </a>
+              
+              
+            </div>
           </div>
 
+          {/* Social media with logos + text */}
           <div className="glass-card contact-card">
             <div className="contact-icon">🔗</div>
             <h3>Social Media</h3>
-            <div className="social-links">
+            <div className="contact-list">
               <a
-                href="https://linkedin.com/company/hack4tech"
+                href="https://linkedin.com/company/hack4tech-glau"
                 target="_blank"
                 rel="noreferrer"
-                className="social-link"
+                className="contact-row"
               >
-                LinkedIn
+                <span className="icon-circle linkedin-icon">in</span>
+                <span className="contact-text">LinkedIn</span>
               </a>
               <a
-                href="https://github.com/hack4tech"
+                href="https://instagram.com/hack4tech.glau"
                 target="_blank"
                 rel="noreferrer"
-                className="social-link"
+                className="contact-row"
               >
-                GitHub
-              </a>
-              <a
-                href="https://instagram.com/hack4tech"
-                target="_blank"
-                rel="noreferrer"
-                className="social-link"
-              >
-                Instagram
+                <span className="icon-circle instagram-icon">IG</span>
+                <span className="contact-text">@hack4tech.glau</span>
               </a>
             </div>
           </div>
         </div>
 
+        {/* Contact form */}
         <div className="glass-card contact-form-card">
           <h2>Send us a message</h2>
           <form className="contact-form">
