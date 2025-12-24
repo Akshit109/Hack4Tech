@@ -6,10 +6,12 @@ import { AuthProvider } from './context/AuthContext';
 import './index.css';
 import './App.css';
 
+import { HashRouter } from 'react-router-dom';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <HashRouter>
     <AuthProvider>
       <App />
     </AuthProvider>
-  </BrowserRouter>
+  </HashRouter>
 );
