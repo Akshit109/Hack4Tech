@@ -16,11 +16,12 @@ import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import MemberDashboard from './pages/MemberDashboard';
-
+import AnimatedBackground from './components/AnimatedBackground';
 
 export default function App() {
   return (
     <div className="app-root">
+      <AnimatedBackground />
       <Navbar />
       <main className="app-main">
         <Routes>
