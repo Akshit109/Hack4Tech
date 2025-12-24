@@ -3,7 +3,7 @@ import TeamCard from '../components/TeamCard';
 import './OurTeam.css';
 
 // Import team images
-import akshitImg from '../assets/Akshit2.jpg';
+import akshitImg from '../assets/Akshit.jpg';
 import ankitImg from '../assets/Ankit.jpg';
 import manishImg from '../assets/Manish.jpg';
 import mentorImg from '../assets/Mentor.jpg'; // add your mentor image
