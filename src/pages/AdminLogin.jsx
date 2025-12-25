@@ -54,8 +54,6 @@ export default function AdminLogin() {
             <p className="auth-subtitle">
               Sign in to access the admin dashboard
             </p>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7140299732960570"
-     crossorigin="anonymous"></script>
 
             <form onSubmit={handleSubmit} className="form-grid">
               <input

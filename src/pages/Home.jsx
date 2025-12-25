@@ -23,8 +23,6 @@ export default function Home() {
       <section className="hero-section">
         <div className="hero-content">
           <div className="hero-badge">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7140299732960570"
-     crossorigin="anonymous"></script>
             Student-led Tech Community · GLA University
           </div>
           <h1 className="hero-title">

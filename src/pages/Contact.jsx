@@ -19,8 +19,6 @@ export default function Contact() {
             <p>Mathura, Uttar Pradesh</p>
             <p>India - 281406</p>
           </div>
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7140299732960570"
-     crossorigin="anonymous"></script>
 
           {/* Email with icon + text */}
           <div className="glass-card contact-card">
