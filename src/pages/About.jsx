@@ -85,6 +85,7 @@ export default function About() {
             </div>
           </div>
         </div>
+        <meta name="google-adsense-account" content="ca-pub-7140299732960570"></meta>
       </section>
     </div>
   );
