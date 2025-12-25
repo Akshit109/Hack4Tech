@@ -9,6 +9,8 @@ export default function About() {
         <p className="section-subtitle">
           A student-led technical community at GLA University
         </p>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7140299732960570"
+     crossorigin="anonymous"></script>
 
         <div className="about-content">
           <div className="glass-card about-card">
@@ -85,7 +87,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <meta name="google-adsense-account" content="ca-pub-7140299732960570"></meta>
+        
       </section>
     </div>
   );

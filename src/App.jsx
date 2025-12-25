@@ -22,6 +22,8 @@ export default function App() {
   return (
     <div className="app-root">
       <AnimatedBackground />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7140299732960570"
+     crossorigin="anonymous"></script>
       <Navbar />
       <main className="app-main">
         <Routes>
